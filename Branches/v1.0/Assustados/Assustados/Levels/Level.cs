@@ -27,7 +27,15 @@ namespace Assustados.Levels
         /// <summary>
         /// Conjunto de tiles da fase 
         /// </summary>
-        private Tile[,] tiles;
+        private Tile[,] tiles; // Tiles do chão
+        /// <remarks>
+        /// Implementação rápida de "layers" na engine. Os 'tiles' são os primeiros a serem
+        /// desenhados na tela, depois os personagens e então os gráficos em 'walls'. Para 
+        /// estes não há teste de colisão
+        /// </remarks>
+        private Tile[,] walls; // Tiles acima do chão e dos personagens
+        private bool bnHasLayers = false;
+
 
         /// <summary>
         /// Personagem jogável
@@ -175,29 +183,62 @@ namespace Assustados.Levels
         /// <param name="path">Caminho absoluto para o arquivo da fase</param>
         private void ReadFileLevel(string path)
         {
-            // Carrega todas as linhas da fase
-            List<string> lines = new List<string>();
-            string line;
-
-            using (StreamReader reader = new StreamReader(path))
+          // Carrega todas as linhas da fase
+          List<string> lines = new List<string>();
+          List<string> linesLayers = new List<string>(); // Linhas do arquivo com informações do layer
+          string line;
+          
+          using (StreamReader reader = new StreamReader(path))
+          {
+            while ((line = reader.ReadLine()) != null)
             {
-                while ((line = reader.ReadLine()) != null)
+              if (line[0] != '~' && !bnHasLayers) // '~' é o separador de layers
+              {
+                // Copia as linhas para o mapa 'tiles'
+                lines.Add(line);
+              }
+              else
+              {
+                if (!bnHasLayers)
                 {
-                    lines.Add(line);
+                  bnHasLayers = true;
                 }
+                else
+                {
+                  // Copia as linhas do layer para o mapa
+                  linesLayers.Add(line);
+                }
+              }
             }
+          }
 
+          // Instanciando a grid de objetos
+          this.tiles = new Tile[lines[0].Length, lines.Count];
+
+          // Looping para cada posição da grid
+          for (int y = 0; y < this.Height; ++y)
+          {
+            for (int x = 0; x < this.Width; ++x)
+            {
+              this.tiles[x, y] = this.LoadTiles(lines[y][x], x, y);
+            }
+          }
+
+          if (bnHasLayers)
+          {
+            // Repete tudo para os layers
             // Instanciando a grid de objetos
-            this.tiles = new Tile[lines[0].Length, lines.Count];
+            this.walls = new Tile[linesLayers[0].Length, linesLayers.Count];
 
             // Looping para cada posição da grid
             for (int y = 0; y < this.Height; ++y)
             {
-                for (int x = 0; x < this.Width; ++x)
-                {
-                    this.tiles[x, y] = this.LoadTiles(lines[y][x], x, y);
-                }
+              for (int x = 0; x < this.Width; ++x)
+              {
+                this.walls[x, y] = this.LoadTiles(linesLayers[y][x], x, y);
+              }
             }
+          }
         }
 
         /// <summary>
@@ -323,7 +364,7 @@ namespace Assustados.Levels
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, null, camera);
 
             // Desenha os objetos da fase
-            this.DrawTiles(spriteBatch);
+            this.DrawTiles(spriteBatch, tiles);
 
             // Desenha o monstro
             this.monster.Draw(spriteBatch);
@@ -331,21 +372,26 @@ namespace Assustados.Levels
             // Desenha o personagem
             this.player.Draw(spriteBatch);
 
+            // Desenha os layers extras
+            if (bnHasLayers)
+              this.DrawTiles(spriteBatch, walls);
             spriteBatch.End();
         }
 
         /// <summary>
         /// Desenha todos os objetos da fase
         /// </summary>
-        private void DrawTiles(SpriteBatch spriteBatch)
+        private void DrawTiles(SpriteBatch spriteBatch, Tile [,] drawTiles)
         {
+            // FIXME: renderizar somente o que efetivamente vai aparecer na tela
+
             // Para cada posição da fase
             for (int y = 0; y < this.Height; ++y)
             {
                 for (int x = 0; x < this.Width; ++x)
                 {
                     // Obtém a textura do objeto
-                    Texture2D texture = this.tiles[x, y].Texture;
+                    Texture2D texture = drawTiles[x, y].Texture;
 
                     // Se o objeto for visível
                     if (texture != null)
