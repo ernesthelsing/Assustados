@@ -78,6 +78,16 @@ namespace Assustados.Levels
         /// </summary>
         private Viewport viewport;
 
+        /// <summary>
+        /// Posições de M no mapa txt
+        /// </summary>
+        List<Vector2> positionsM;
+
+        /// <summary>
+        /// Tempo para atualizar o monstro na tela (alterar sua posição)
+        /// </summary>
+        private float timeUpdateMonster;
+
         #endregion
 
         #region Properties
@@ -148,8 +158,21 @@ namespace Assustados.Levels
             // Nome da fase
             this.levelName = levelName;
 
+            // Inicializa as posições de M com uma lista que armazenará todas as posições x e y de M no txt 
+            this.positionsM = new List<Vector2>();
+
+            // Tempo para atualizar o monstro
+            this.timeUpdateMonster = 0;
+
             // Carrega as texturas e sons da fase
             this.LoadContent();
+
+            // Inicializa a posição do monstro fazendo um random entre os M no arquivo txt da fase
+            Random random = new Random(DateTime.Now.Millisecond);
+
+            int m = random.Next(positionsM.Count - 1);
+            
+            LoadMonsterTile((int)positionsM[m].X, (int)positionsM[m].Y);
         }
 
         /// <summary>
@@ -263,7 +286,9 @@ namespace Assustados.Levels
                     return LoadStartTile(x, y);
                 // Monstro da fase
                 case 'M':
-                    return LoadMonsterTile(x, y);
+                    positionsM.Add(new Vector2(x, y));
+                    return new Tile(null, Collision.Passable);
+                    //return LoadMonsterTile(x, y);
                 // Caracter de objeto desconhecido
                 default:
                     throw new NotSupportedException(string.Format("O caracter {0} não é suportado na posição X:{1} Y:{2}!", tile, x, y));
@@ -297,16 +322,17 @@ namespace Assustados.Levels
         /// <summary>
         /// Acrescenta o monstro na fase
         /// </summary>
-        private Tile LoadMonsterTile(int x, int y)
+        private void LoadMonsterTile(int x, int y)
         {
             // Atribui a posição inicial
             this.start = Mathematics.GetBottomCenter(this.GetBounds(x, y));
 
-            // Inicializa o personagem principal
-            this.monster = new Monster(this, this.start);
+            Vector2 posicao = Mathematics.GetBottomCenter(this.GetBounds(x, y));
 
+            // Inicializa o personagem principal
+            this.monster = new Monster(this, posicao);
             // Posição onde está o inimigo não tem colisão
-            return new Tile(null, Collision.Passable);
+            //return new Tile(null, Collision.Passable);
         }
 
         #endregion
@@ -322,6 +348,21 @@ namespace Assustados.Levels
             // Atualiza o monstro
             this.monster.Update(gameTime);
 
+            //Pega o tempo em segundos do jogo e atribui a variável timeUpdateMonster
+            timeUpdateMonster += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            //Quando o tempo for maior que 3 segundos o monstro é desenhado em uma posição aleatória de M no txt do Level.
+            if (timeUpdateMonster >= 3.0)
+            {
+
+                Random random = new Random(DateTime.Now.Millisecond);
+
+                int m = random.Next(positionsM.Count - 1);
+
+                LoadMonsterTile((int)positionsM[m].X, (int)positionsM[m].Y);
+
+                timeUpdateMonster = 0;
+            }
             // Atualiza o personagem
             this.player.Update(gameTime);
 
