@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Backgrounds\Bogeyman.png</Source>
+      <Name>Backgrounds\Bogeyman</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Backgrounds\Bogeyman.xnb</Output>
+      <Time>2011-08-30T17:19:05.9479897-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Screens\blank.png</Source>
+      <Name>Screens\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Screens\blank.xnb</Output>
+      <Time>2011-08-30T17:19:05.9789915-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Screens\gradient.png</Source>
+      <Name>Screens\gradient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Screens\gradient.xnb</Output>
+      <Time>2011-08-30T17:19:05.9809916-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Screens\main.png</Source>
+      <Name>Screens\main</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Screens\main.xnb</Output>
+      <Time>2011-08-30T17:19:05.9839918-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\amg1large.png</Source>
+      <Name>Sprites\Others\amg1large</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\amg1large.xnb</Output>
+      <Time>2011-08-30T17:19:06.0409951-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\bmg1.png</Source>
+      <Name>Sprites\Others\bmg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\bmg1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0439952-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\dvl1.png</Source>
+      <Name>Sprites\Others\dvl1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\dvl1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0469954-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\femalefighter.png</Source>
+      <Name>Sprites\Others\femalefighter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\femalefighter.xnb</Output>
+      <Time>2011-08-30T17:19:06.0499956-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\femalepriest.png</Source>
+      <Name>Sprites\Others\femalepriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\femalepriest.xnb</Output>
+      <Time>2011-08-30T17:19:06.0539958-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\femalethief.png</Source>
+      <Name>Sprites\Others\femalethief</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\femalethief.xnb</Output>
+      <Time>2011-08-30T17:19:06.056996-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\femalewizard.png</Source>
+      <Name>Sprites\Others\femalewizard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\femalewizard.xnb</Output>
+      <Time>2011-08-30T17:19:06.0599962-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\ftr1.png</Source>
+      <Name>Sprites\Others\ftr1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\ftr1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0639964-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\gsd1.png</Source>
+      <Name>Sprites\Others\gsd1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\gsd1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0659965-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\isd1.png</Source>
+      <Name>Sprites\Others\isd1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\isd1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0689967-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\jli1.png</Source>
+      <Name>Sprites\Others\jli1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\jli1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0729969-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\kin1.png</Source>
+      <Name>Sprites\Others\kin1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\kin1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0759971-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\knt1.png</Source>
+      <Name>Sprites\Others\knt1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\knt1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0789972-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Monsters\Bogeyman.png</Source>
+      <Name>Sprites\Monsters\Bogeyman</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Monsters\Bogeyman.xnb</Output>
+      <Time>2011-08-30T17:19:05.9859919-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\malepriest.png</Source>
+      <Name>Sprites\Others\malepriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\malepriest.xnb</Output>
+      <Time>2011-08-30T17:19:06.0819974-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Player.png</Source>
+      <Name>Sprites\Player\Player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Player\Player.xnb</Output>
+      <Time>2011-08-30T17:19:06.1720026-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\malewizard.png</Source>
+      <Name>Sprites\Others\malewizard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\malewizard.xnb</Output>
+      <Time>2011-08-30T17:19:06.0849976-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\man1.png</Source>
+      <Name>Sprites\Others\man1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\man1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0879978-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\mnt1.png</Source>
+      <Name>Sprites\Others\mnt1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\mnt1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0909979-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\mnv1.png</Source>
+      <Name>Sprites\Others\mnv1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\mnv1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0939981-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\mst1.png</Source>
+      <Name>Sprites\Others\mst1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\mst1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0969983-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\nja1.png</Source>
+      <Name>Sprites\Others\nja1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\nja1.xnb</Output>
+      <Time>2011-08-30T17:19:06.0999984-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc1.png</Source>
+      <Name>Sprites\Others\npc1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1029986-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc2.png</Source>
+      <Name>Sprites\Others\npc2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc2.xnb</Output>
+      <Time>2011-08-30T17:19:06.1059988-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc3.png</Source>
+      <Name>Sprites\Others\npc3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc3.xnb</Output>
+      <Time>2011-08-30T17:19:06.108999-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc4.png</Source>
+      <Name>Sprites\Others\npc4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc4.xnb</Output>
+      <Time>2011-08-30T17:19:06.1119991-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc5.png</Source>
+      <Name>Sprites\Others\npc5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc5.xnb</Output>
+      <Time>2011-08-30T17:19:06.1149993-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc6.png</Source>
+      <Name>Sprites\Others\npc6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc6.xnb</Output>
+      <Time>2011-08-30T17:19:06.1179995-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc7.png</Source>
+      <Name>Sprites\Others\npc7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc7.xnb</Output>
+      <Time>2011-08-30T17:19:06.1209996-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc8.png</Source>
+      <Name>Sprites\Others\npc8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc8.xnb</Output>
+      <Time>2011-08-30T17:19:06.1239998-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\npc9.png</Source>
+      <Name>Sprites\Others\npc9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\npc9.xnb</Output>
+      <Time>2011-08-30T17:19:06.127-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\pdn1.png</Source>
+      <Name>Sprites\Others\pdn1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\pdn1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1300002-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\scr1.png</Source>
+      <Name>Sprites\Others\scr1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\scr1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1340004-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\skl1.png</Source>
+      <Name>Sprites\Others\skl1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\skl1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1380006-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\smr1.png</Source>
+      <Name>Sprites\Others\smr1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\smr1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1410008-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\spd1.png</Source>
+      <Name>Sprites\Others\spd1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\spd1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1430009-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\thf1.png</Source>
+      <Name>Sprites\Others\thf1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\thf1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1470011-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\trk1.png</Source>
+      <Name>Sprites\Others\trk1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\trk1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1500013-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\wmg1.png</Source>
+      <Name>Sprites\Others\wmg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\wmg1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1530015-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\wmn1.png</Source>
+      <Name>Sprites\Others\wmn1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\wmn1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1560016-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\wmn2.png</Source>
+      <Name>Sprites\Others\wmn2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\wmn2.xnb</Output>
+      <Time>2011-08-30T17:19:06.1580018-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\wmn3.png</Source>
+      <Name>Sprites\Others\wmn3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\wmn3.xnb</Output>
+      <Time>2011-08-30T17:19:06.1610019-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\wnv1.png</Source>
+      <Name>Sprites\Others\wnv1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\wnv1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1640021-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\ybo1.png</Source>
+      <Name>Sprites\Others\ybo1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\ybo1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1670023-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\ygr1.png</Source>
+      <Name>Sprites\Others\ygr1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\ygr1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1690024-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Others\zph1.png</Source>
+      <Name>Sprites\Others\zph1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Sprites\Others\zph1.xnb</Output>
+      <Time>2011-08-30T17:19:06.1700024-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block.png</Source>
+      <Name>Tiles\block</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Tiles\block.xnb</Output>
+      <Time>2011-08-30T17:19:06.1740027-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\chronometer.spritefont</Source>
+      <Name>Fonts\chronometer</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Fonts\chronometer.xnb</Output>
+      <Time>2011-08-30T17:19:05.9719911-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\gamefont.spritefont</Source>
+      <Name>Fonts\gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Fonts\gamefont.xnb</Output>
+      <Time>2011-08-30T17:19:05.9729912-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\menufont.spritefont</Source>
+      <Name>Fonts\menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Fonts\menufont.xnb</Output>
+      <Time>2011-08-30T17:19:05.9749913-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Levels\Bogeyman.mp3</Source>
+      <Name>Effects\Levels\Bogeyman</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Effects\Levels\Bogeyman.xnb</Output>
+      <Time>2011-08-30T17:19:05.9589904-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Monsters\Bogeyman.mp3</Source>
+      <Name>Effects\Monsters\Bogeyman</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\Effects\Monsters\Bogeyman.xnb</Output>
+      <Time>2011-08-30T17:19:05.969991-03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\Game Developer\Assustados\Branches\v1.0\Assustados\AssustadosContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Game Developer\Assustados\Branches\v1.0\Assustados\AssustadosContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Game Developer\Assustados\Branches\v1.0\Assustados\Assustados\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-08-16T21:40:39.7175677-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
